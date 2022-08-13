@@ -79,11 +79,11 @@ export default function Main({handleChange, handleSubmit}) {
                     </div>
                     <div className="main-form-date">
                         <label htmlFor="delivery-date">Select Appointment Date:</label>
-                        <input type="date" name="delivery-date" id="delivery-date" value="07/08/2022" min="(2022-08-19)"/>
+                        <input type="date" name="delivery-date" id="delivery-date"/>
                     </div>
                     <div className="main-form-time">
                         <label htmlFor="appt">Choose a time for your appointment:</label>
-                        <input type="time" name="appt" id="appt" value="09:00"  min="08:00" max="17:00"/>
+                        <input type="time" name="appt" id="appt"/>
                     </div>
                 </div>
                 <button onSubmit={handleSubmit} className='form-submit-button'>Submit</button>

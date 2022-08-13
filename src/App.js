@@ -6,28 +6,28 @@ function App() {
 
   const [show, setShow] = useState(false)
 
-  const [formData, setFormData] = useState({
-    hospital: "",
-    service: "",
-    date: "",
-    time: "",
-    delivery: "",
-  })
+  // const [formData, setFormData] = useState({
+  //   hospital: "",
+  //   service: "",
+  //   date: "",
+  //   time: "",
+  //   delivery: "",
+  // })
 
-  function handleChange(event) {
-    const {name, value, checked, date, time, type} = event.target
-    setFormData(prevFormData => {
-      return {
-        ...prevFormData,
-        [name]: type === "radio" ? checked:value
-      }
-    })
-  }
+  // function handleChange(event) {
+  //   const {name, value, checked, date, time, type} = event.target
+  //   setFormData(prevFormData => {
+  //     return {
+  //       ...prevFormData,
+  //       [name]: type === "radio" ? checked:value
+  //     }
+  //   })
+  // }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log(formData)
-  }
+  // function handleSubmit(event) {
+  //   event.preventDefault();
+  //   console.log(formData)
+  // }
 
   const styles = {
     backgroundColor: show ? "#FFFFFF" : "#001011",
@@ -39,10 +39,10 @@ function App() {
       {
         show === false ? <Header open={setShow}/> : 
         <Main 
-          value={formData.value} 
-          select={formData.select} 
-          change={handleChange}
-          handleSubmit={handleSubmit}
+          // value={formData.value} 
+          // select={formData.select} 
+          // change={handleChange}
+          // handleSubmit={handleSubmit}
         />
       }
       

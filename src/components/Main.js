@@ -16,9 +16,8 @@ export default function Main({handleChange, handleSubmit}) {
             <form className='main-form-actions'>
                 <div className='main-form-hospitals'>
                     <label htmlFor='hospital'>Hospitals Near Me:</label>
-                    <select name='hospital' id='hospital' className='hospitals' value={handleChange} onChange={() => handleChange}>
-                        <option value='' disabled selected hidden>Select Hospital</option > 
-                        <option value=''></option >
+                    <select name='hospital' id='hospital' className='hospitals'>
+                        <option value='' defaultValue="Select Hospital">Select Hospital</option >
                         <option value='formData.agege general hospital'>Agege General Hospital</option>
                         <option value='formData.ajeromi general hospital'>Ajeromi General Hospital</option>
                         <option value='formData.alimosho general hospital'>Alimosho General Hospital</option> 
@@ -41,8 +40,8 @@ export default function Main({handleChange, handleSubmit}) {
                 </div>
                 <div className="main-form-service">
                     <label htmlFor='service'>Required Service</label>
-                    <select id='service' name='service' className='service' value={handleChange} onChange={() => handleChange}>
-                        <option value='' disabled hidden selected>Select Service</option >
+                    <select id='service' name='service' className='service' >
+                        <option value='' defaultValue="Select Service">Select Service</option >
                         <option value='formData.general outpatient'>General outpatient</option > 
                         <option value='formData.Inpatient treatment facility'>Inpatient Treatment Facility</option >
                         <option value='formData.General Medicine'>General Medicine</option >
@@ -69,7 +68,7 @@ export default function Main({handleChange, handleSubmit}) {
                     <h3 className="main-form-booking">Booking Type:</h3>
                     <div className='main-form-delivery-type'>
                         <div className="normal-booking bookings">
-                            <input type="radio" name="delivery" checked={handleChange} value="option2" className='normal-booking' id="normal-booking"/>
+                            <input type="radio" name="delivery"  value="option2" className='normal-booking' id="normal-booking"/>
                             <label htmlFor="delivery">Normal Booking</label>
                         </div>
                         <div className="emergency-booking bookings">
@@ -79,14 +78,14 @@ export default function Main({handleChange, handleSubmit}) {
                     </div>
                     <div className="main-form-date">
                         <label htmlFor="delivery-date">Select Appointment Date:</label>
-                        <input type="date" name="delivery-date" id="delivery-date"/>
+                        <input type="date" name="delivery-date" id="delivery-date" defaultValue="04/26/2015"/>
                     </div>
                     <div className="main-form-time">
                         <label htmlFor="appt">Choose a time for your appointment:</label>
-                        <input type="time" name="appt" id="appt"/>
+                        <input type="time" name="appt" id="appt" defaultValue="09:00"/>
                     </div>
                 </div>
-                <button onSubmit={handleSubmit} className='form-submit-button'>Submit</button>
+                <button  className='form-submit-button'>Submit</button>
             </form>
         </main>
     )

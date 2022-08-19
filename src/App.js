@@ -1,50 +1,37 @@
-import React, { useState } from "react"
+import React from "react"
 import Header from "./components/Header"
 import Main from "./components/Main"
+import SignPage from "./components/SignPage/SignPage"
+import SignIn from "./components/SignIn/SignIn.jsx"
+import SignUp from "./components/signUp/signUp.jsx"
+import Welcome from "./components/Welcome/Welcome.jsx"
+import Arrow from "../src/icons/arrow-left.svg"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
-
-  const [show, setShow] = useState(false)
-
-  // const [formData, setFormData] = useState({
-  //   hospital: "",
-  //   service: "",
-  //   date: "",
-  //   time: "",
-  //   delivery: "",
-  // })
-
-  // function handleChange(event) {
-  //   const {name, value, checked, date, time, type} = event.target
-  //   setFormData(prevFormData => {
-  //     return {
-  //       ...prevFormData,
-  //       [name]: type === "radio" ? checked:value
-  //     }
-  //   })
-  // }
-
-  // function handleSubmit(event) {
-  //   event.preventDefault();
-  //   console.log(formData)
-  // }
-
-  const styles = {
-    backgroundColor: show ? "#FFFFFF" : "#001011",
-    boxShadow: show ? "2px 2px 19px 4px rgba(0, 0, 0, 0.286)" : "none"
-  }
-
   return (
-    <div style={styles} className="App">
-      {
-        show === false ? <Header open={setShow}/> : 
-        <Main 
-          // value={formData.value} 
-          // select={formData.select} 
-          // change={handleChange}
-          // handleSubmit={handleSubmit}
-        />
-      }
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path='/' element={<Welcome />} />
+        </Routes>
+        <Routes>
+          <Route path='/signpage' element={<SignPage arrow={Arrow}/>} />
+        </Routes>
+        <Routes>
+          <Route path='/signin' element={<SignIn arrow={Arrow}/>} />
+        </Routes>
+        <Routes>
+          <Route path='/signup' element={<SignUp arrow={Arrow}/>} />
+        </Routes>
+        <Routes>
+          <Route path="/header" element={<Header />}/>
+        </Routes>
+        <Routes>
+          <Route path="/main" element={<Main />} />
+        </Routes>
+        
+      </Router>
       
 
     </div>

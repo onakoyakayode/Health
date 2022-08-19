@@ -1,0 +1,58 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-block-start: 10rem; */
+    height: 100vh;
+    gap: 4rem;
+    color: #fff;
+}
+
+.welcome-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: inherit;
+    text-align: center;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes title {
+    0% {
+        transform: translateX(-400px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.welcome-title span { 
+    font-size: 3.5rem;
+    display: block;
+    line-height: 8rem;
+    font-weight: 800;
+}
+
+.button-icon {
+    animation-name: button;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes button {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+

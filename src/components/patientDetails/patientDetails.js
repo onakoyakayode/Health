@@ -1,4 +1,4 @@
-export default contacts = {
+export default {
   "users": [
     {
       "id": 0,

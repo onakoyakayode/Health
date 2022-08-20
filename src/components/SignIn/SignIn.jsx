@@ -17,7 +17,7 @@ export default function SignIn(props) {
                     <div className="sign-in-button">
                         <button type="submit" className="sign-in-btn">Sign in</button>
                         <p className="sign-in-text">or</p>
-                        <Link  to='/signup'><button type="button" className="sign-in-up-btn" >Sign up</button></Link>
+                        <Link  to='/signup'><button type="button" className="sign-up-btn" >Sign up</button></Link>
                     </div>
                 </form>
             </div>

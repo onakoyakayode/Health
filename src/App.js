@@ -1,11 +1,11 @@
 import React from "react"
 import Header from "./components/Header"
 import Main from "./components/Main"
-import SignPage from "./components/SignPage/SignPage"
+import SignPage from "./components/SignPage/SignPage.jsx"
 import SignIn from "./components/SignIn/SignIn.jsx"
-import SignUp from "./components/SignUp/SignUp"
+import SignUp from "./components/SignUp/SignUp.jsx"
 import Welcome from "./components/Welcome/Welcome.jsx"
-import BookApp from "./components/Book-Appointment/BookApp"
+import BookApp from "./components/Book-Appointment/BookApp.jsx"
 import Arrow from "../src/icons/arrow-left.svg"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 

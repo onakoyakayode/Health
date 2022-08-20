@@ -13,6 +13,7 @@
     bottom: -220.5%;
     left: 0;
     background: #fff;
+    background: #f2f2f6;
     width: 100%;
     max-height: 60vh;
     overflow-y: auto;
@@ -24,6 +25,7 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid #08155D;
+    border-bottom: 1px solid #956E8C;
     padding: 10px 5px;
     color: #555;
     font-size: 1.2rem;
@@ -50,6 +52,7 @@
 
 button.sign-in-up-btn {
     background: #08155D;
+    background: #55355A;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
@@ -63,8 +66,9 @@ button.sign-in-up-btn {
     font-size: 1.2rem;
     font-weight: 600;
     background: #fff;
-    color: #555;
-    border: 1px solid #555;
+    background: #f2f2f6;
+    color: #55355A;
+    border: 1px solid #55355A;
     border-radius: 5px;
     height: 3.5rem;
     width: 100%;
@@ -84,7 +88,7 @@ button.sign-in-up-btn {
     content: "";
     width: 45%;
     height: 1px;
-    background: #555;
+    background: #956E8C;
     left: 0;
     bottom: 10px;
 }
@@ -94,7 +98,7 @@ button.sign-in-up-btn {
     content: "";
     width: 45%;
     height: 1px;
-    background: #555;
+    background: #956E8C;
     right: 0;
     bottom: 10px;
 }

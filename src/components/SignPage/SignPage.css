@@ -47,10 +47,12 @@ button.sign-in {
     font-weight: 600;
     background: #fff;
     color: #08155D;
+    color: #55355a;
     border: 1px solid transparent;
     border-radius: 5px;
     height: 3.5rem;
     width: 100%;
+    cursor: pointer;
 }
 
 button.sign-up {
@@ -58,6 +60,7 @@ button.sign-up {
     font-weight: 600;
     color: #fff;
     background: #08155D;
+    background: #55355a;
     border: 1px solid #fff;
     border-radius: 5px;
     height: 3.5rem;

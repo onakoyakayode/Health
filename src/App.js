@@ -27,14 +27,7 @@ function App() {
         </Routes>
         <Routes>
           <Route path='/bookapp' element={<BookApp arrow={Arrow}/>} />
-        </Routes>
-        <Routes>
-          <Route path="/header" element={<Header />}/>
-        </Routes>
-        <Routes>
-          <Route path="/main" element={<Main />} />
-        </Routes>
-        
+        </Routes>       
       </Router>
       
      {/* <BookApp arrow={Arrow}/> */}

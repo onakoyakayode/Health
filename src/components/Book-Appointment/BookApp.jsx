@@ -114,7 +114,7 @@ export default function BookApp(props) {
                             <input onChange={handleChange} value={dataForm.time} type="time" name="time" id="appt"/>
                         </div>
                     </div>
-                    <button  className='form-submit-button'>Submit</button>
+                    <button className='form-submit-button'>Submit</button>
                 </form>
            </div>
         </div>

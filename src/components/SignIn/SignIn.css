@@ -14,14 +14,15 @@
     font-size: 2rem;
     font-weight: 400;
     text-align: justify;
-    line-height: 2rem;
-    width: max-content;
+    line-height: 2.5rem;
+    width: 80%;
     padding: 20px;
     color: #fff;
     background: #200321;
-    margin-inline-start: 20px;
+    margin-inline: auto;
     border-radius: 15px;
     box-shadow: 3px 3px 12px #200321;
+    text-align: center;
 }
 
 .sign-in-title span {

@@ -41,6 +41,7 @@
     animation-name: button;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
+    width: 70px;
 }
 
 

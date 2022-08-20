@@ -4,7 +4,7 @@
 }
 
 .sign-in .arrow-icon {
-    padding: 20px;
+    padding: 0 20px;
     width: 70px;
 }
 
@@ -23,12 +23,12 @@
 
 .sign-in-content {
     position: absolute;
-    bottom: -220.5%;
+    bottom: -287.5%;
     left: 0;
     background: #fff;
     background: #f2f2f6;
     width: 100%;
-    height: 60vh;
+    height: 190%;
     padding: 30px 20px;
     border-radius: 10px 10px 0 0;
 }

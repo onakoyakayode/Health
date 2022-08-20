@@ -1,5 +1,5 @@
 .sign-up {
-    padding: 20px;
+    padding: 0 20px;
     position: relative;
     max-height: 100vh;
 }
@@ -10,7 +10,7 @@
 
 .sign-up-content {
     position: absolute;
-    bottom: -220.5%;
+    bottom: -256.5%;
     left: 0;
     background: #fff;
     background: #f2f2f6;

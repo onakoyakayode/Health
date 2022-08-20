@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 button.sign-in {
@@ -47,12 +47,13 @@ button.sign-in {
     font-weight: 600;
     background: #fff;
     color: #08155D;
-    color: #55355a;
+    color: #200321;
     border: 1px solid transparent;
     border-radius: 5px;
     height: 4rem;
     width: 100%;
     cursor: pointer;
+    box-shadow: 2px 2px 10px #08080891;
 }
 
 button.sign-up {
@@ -60,10 +61,11 @@ button.sign-up {
     font-weight: 600;
     color: #fff;
     background: #08155D;
-    background: #55355a;
-    border: 1px solid #fff;
+    background: #200321;
+    border: 1px solid #200321;
     border-radius: 5px;
     height: 4rem;
     width: 100%;
     cursor: pointer;
+    box-shadow: 2px 2px 10px #200321;
 }

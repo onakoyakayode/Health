@@ -6,6 +6,8 @@ import { Link } from "react-router-dom"
 
 
 export default function BookApp(props) {
+
+    console.log(Details.users[0].name)
     
     const [dataForm, setDataForm] = useState({
         hospital: "",

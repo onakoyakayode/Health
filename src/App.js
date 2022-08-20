@@ -1,6 +1,4 @@
 import React from "react"
-import Header from "./components/Header"
-import Main from "./components/Main"
 import SignPage from "./components/SignPage/SignPage.jsx"
 import SignIn from "./components/SignIn/SignIn.jsx"
 import SignUp from "./components/SignUp/SignUp.jsx"

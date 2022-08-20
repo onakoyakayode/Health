@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BookApp.css"
 import Details from "../patientDetails/patientDetails"
 import { Link } from "react-router-dom"
@@ -6,8 +6,32 @@ import { Link } from "react-router-dom"
 
 
 export default function BookApp(props) {
+    
+    const [dataForm, setDataForm] = useState({
+        hospital: "",
+        service: "",
+        delivery: "",    
+        date: "",
+        time: ""
+    })
 
-    console.log(Details.users[0].name)
+    const handleChange = (e) => {
+        const {name, value, type, checked} = e.target
+
+        setDataForm(prevDataForm => {
+            return {
+                ...prevDataForm,
+                [name]: type === "radio" ? checked: value
+            }            
+        })
+    }
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(dataForm)
+    }
+    
     return (
         <div className="book-app">
             <div className="book-app-name">
@@ -18,10 +42,10 @@ export default function BookApp(props) {
                 <h1>Find your <span>Preferred Hospital</span></h1>
             </div>
            <div className="book-app-form">
-            <form className='main-form-actions'>
+            <form onSubmit={handleSubmit} className='main-form-actions'>
                     <div className='main-form-hospitals'>
                         <label htmlFor='hospital'>Hospitals Near Me:</label>
-                        <select name='hospital' id='hospital' className='hospitals'>
+                        <select onChange={handleChange} value={dataForm.hospital} name='hospital' id='hospital' className='hospitals'>
                             <option value='' defaultValue="Select Hospital">Select Hospital</option >
                             <option value='formData.agege general hospital'>Agege General Hospital</option>
                             <option value='formData.ajeromi general hospital'>Ajeromi General Hospital</option>
@@ -45,7 +69,7 @@ export default function BookApp(props) {
                     </div>
                     <div className="main-form-service">
                         <label htmlFor='service'>Required Service</label>
-                        <select id='service' name='service' className='service' >
+                        <select onChange={handleChange} value={dataForm.service} id='service' name='service' className='service' >
                             <option value='' defaultValue="Select Service">Select Service</option >
                             <option value='formData.general outpatient'>General outpatient</option > 
                             <option value='formData.Inpatient treatment facility'>Inpatient Treatment Facility</option >
@@ -73,21 +97,21 @@ export default function BookApp(props) {
                         <label htmlFor="delivery">Booking Type:</label>
                         <div className='main-form-delivery-type'>
                             <div className="normal-booking bookings">
-                                <input type="radio" name="delivery"  value="option2" className='normal-booking' id="normal-booking"/>
+                                <input on type="radio" name="delivery" onChange={handleChange} checked={dataForm.delivery === 'normal-booking'} value="normal" className='normal-booking' id="normal-booking"/>
                                 <label className="booking" htmlFor="delivery">Normal Booking</label>
                             </div>
                             <div className="emergency-booking bookings">
-                                <input type="radio" name="delivery"  value="option1" className='emergency-booking' id="emergency-booking"/>
+                                <input type="radio" name="delivery" onChange={handleChange}  value="emergency`" className='emergency-booking' id="emergency-booking"/>
                                 <label className="booking" htmlFor="delivery">Emergency Booking</label>
                             </div>
                         </div>
                         <div className="main-form-date">
                             <label htmlFor="delivery-date">Select Appointment Date:</label>
-                            <input type="date" name="delivery-date" id="delivery-date" defaultValue="04/26/2015"/>
+                            <input onChange={handleChange} value={dataForm.date} type="date" name="date" id="delivery-date"/>
                         </div>
                         <div className="main-form-time">
                             <label htmlFor="appt">Choose a time for your appointment:</label>
-                            <input type="time" name="appt" id="appt" defaultValue="09:00"/>
+                            <input onChange={handleChange} value={dataForm.time} type="time" name="time" id="appt"/>
                         </div>
                     </div>
                     <button  className='form-submit-button'>Submit</button>

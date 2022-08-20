@@ -24,15 +24,15 @@ export default function SignIn(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        navigate('/bookapp')
         console.log(signInData)
-        navigate('/bookApp')
     }
 
 
     return (
         <div className="sign-in">
             <Link to='/signpage'><img src={props.arrow} className="arrow-icon" alt="arrow"/></Link>
-            <h1 className="sign-in-title">Welcome Back</h1>
+            <h1 className="sign-in-title">Welcome <span>Back</span></h1>
             <div className="sign-in-content">
                 <form onSubmit={handleSubmit} className="form-horizontal">
                     <div className="form-input">

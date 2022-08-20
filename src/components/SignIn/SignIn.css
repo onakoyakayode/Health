@@ -11,13 +11,21 @@
 
 .sign-in-title {
     margin-top: 5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 3.5rem;
-    width: 50%;
-    padding-left: 20px;
-    margin-bottom: 0%;
+    text-align: justify;
+    line-height: 2rem;
+    width: max-content;
+    padding: 20px;
     color: #fff;
+    background: #200321;
+    margin-inline-start: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 12px #200321;
+}
+
+.sign-in-title span {
+    display: block;
 }
 
 

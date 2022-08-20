@@ -33,7 +33,7 @@ export default function SignUp(props) {
     return (
         <div className="sign-up">
             <Link to='/signpage'><img src={props.arrow} className="arrow-icon" alt="arrow"/></Link>
-            <h1 className="sign-in-title">Create Account</h1>
+            <h1 className="sign-in-title">Create <span>Account</span></h1>
             <div className="sign-up-content">
                 <form onSubmit={handleSubmit} className="form-horizontal">
                     <div className="form-input">

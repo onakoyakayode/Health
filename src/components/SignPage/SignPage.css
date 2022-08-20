@@ -50,7 +50,7 @@ button.sign-in {
     color: #55355a;
     border: 1px solid transparent;
     border-radius: 5px;
-    height: 3.5rem;
+    height: 4rem;
     width: 100%;
     cursor: pointer;
 }
@@ -63,6 +63,7 @@ button.sign-up {
     background: #55355a;
     border: 1px solid #fff;
     border-radius: 5px;
-    height: 3.5rem;
+    height: 4rem;
     width: 100%;
+    cursor: pointer;
 }
